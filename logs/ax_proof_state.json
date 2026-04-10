@@ -1,7 +1,7 @@
 {
   "target": "src",
   "sourceRoot": "D:\\Coding\\Archright\\bitcoin\\src",
-  "timestamp": "2026-04-10T05:04:34.965Z",
+  "timestamp": "2026-04-10T07:36:41.011Z",
   "summary": {
     "totalNodes": 9609,
     "attemptedNodes": 5,
@@ -9,7 +9,8 @@
     "counterExamples": 4,
     "vacuousContradictions": 0,
     "timedOut": 0,
-    "unattempted": 9605
+    "unattempted": 9605,
+    "unverifiable": 0
   },
   "entries": [
     {
@@ -23,7 +24,8 @@
       "dependencyCount": 0,
       "dependentNodeCount": 13,
       "transitiveDependentCount": 1341,
-      "raw_smt_query": "(check-sat)  ; <-- 1차 관문: 여기서 unsat 나오면 중단되어야 함\n(assert (>= univalue_cpp_checkType_depth 0))\n(assert (>= univalue_cpp_checkType_impact 19073))\n(check-sat)  ; <-- 2차 관문: 최종 증명"
+      "raw_smt_query": "(check-sat)  ; <-- 1차 관문: 여기서 unsat 나오면 중단되어야 함\n(assert (>= univalue_cpp_checkType_depth 0))\n(assert (>= univalue_cpp_checkType_impact 19073))\n(check-sat)  ; <-- 2차 관문: 최종 증명",
+      "id": "#01"
     },
     {
       "nodeId": "indirectmap.h::find",
@@ -49,7 +51,8 @@
       "dependencyCount": 0,
       "dependentNodeCount": 164,
       "transitiveDependentCount": 702,
-      "raw_smt_query": "(check-sat)  ; <-- 1차 관문: 여기서 unsat 나오면 중단되어야 함\n(assert (>= univalue_cpp_reserve_depth 0))\n(assert (>= univalue_cpp_reserve_impact 13600))\n(check-sat)  ; <-- 2차 관문: 최종 증명"
+      "raw_smt_query": "(check-sat)  ; <-- 1차 관문: 여기서 unsat 나오면 중단되어야 함\n(assert (>= univalue_cpp_reserve_depth 0))\n(assert (>= univalue_cpp_reserve_impact 13600))\n(check-sat)  ; <-- 2차 관문: 최종 증명",
+      "id": "#02"
     },
     {
       "nodeId": "util/bitdeque.h::emplace",
@@ -75,7 +78,8 @@
       "dependencyCount": 0,
       "dependentNodeCount": 37,
       "transitiveDependentCount": 524,
-      "raw_smt_query": "(check-sat)  ; <-- 1차 관문: 여기서 unsat 나오면 중단되어야 함\n(assert (>= field_impl_h_secp256k1_fe_mul_depth 0))\n(assert (>= field_impl_h_secp256k1_fe_mul_impact 8187))\n(check-sat)  ; <-- 2차 관문: 최종 증명"
+      "raw_smt_query": "(check-sat)  ; <-- 1차 관문: 여기서 unsat 나오면 중단되어야 함\n(assert (>= field_impl_h_secp256k1_fe_mul_depth 0))\n(assert (>= field_impl_h_secp256k1_fe_mul_impact 8187))\n(check-sat)  ; <-- 2차 관문: 최종 증명",
+      "id": "#03"
     },
     {
       "nodeId": "secp256k1/src/field_impl.h::secp256k1_fe_add",
@@ -101,7 +105,8 @@
       "dependencyCount": 0,
       "dependentNodeCount": 131,
       "transitiveDependentCount": 353,
-      "raw_smt_query": "(check-sat)  ; <-- 1차 관문: 여기서 unsat 나오면 중단되어야 함\n(assert (>= spend_tests_cpp_Assert_depth 0))\n(assert (>= spend_tests_cpp_Assert_impact 7955))\n(check-sat)  ; <-- 2차 관문: 최종 증명"
+      "raw_smt_query": "(check-sat)  ; <-- 1차 관문: 여기서 unsat 나오면 중단되어야 함\n(assert (>= spend_tests_cpp_Assert_depth 0))\n(assert (>= spend_tests_cpp_Assert_impact 7955))\n(check-sat)  ; <-- 2차 관문: 최종 증명",
+      "id": "#04"
     },
     {
       "nodeId": "secp256k1/src/field_impl.h::secp256k1_fe_sqr",
@@ -49267,7 +49272,8 @@
       "dependencyCount": 1,
       "dependentNodeCount": 390,
       "transitiveDependentCount": 1291,
-      "raw_smt_query": ""
+      "raw_smt_query": "",
+      "id": "#05"
     },
     {
       "nodeId": "qt/test/wallettests.cpp::connect",
@@ -124954,14 +124960,14 @@
       }
     ],
     "performance": {
-      "totalWallTimeMs": 21,
-      "cpuEfficiency": 2.380952380952381,
-      "parallelSpeedupRatio": 0.09523809523809523,
+      "totalWallTimeMs": 20,
+      "cpuEfficiency": 7.5,
+      "parallelSpeedupRatio": 0.3,
       "cacheHitCount": 0,
       "timeoutCount": 0,
       "timeoutImpactNodes": 0,
       "hotspotLabel": "univalue.cpp::checkType",
-      "hotspotElapsedMs": 1
+      "hotspotElapsedMs": 2
     },
     "timeoutDiagnostics": []
   },
