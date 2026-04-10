@@ -206,6 +206,7 @@ const UniValue& UniValue::operator[](size_t index) const
     return values.at(index);
 }
 
+// @axiom-hint: lean="expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5" smt="(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
 void UniValue::checkType(const VType& expected) const
 {
     if (typ != expected) {
