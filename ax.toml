@@ -1,18 +1,44 @@
-
-[hints."univalue.cpp::push_back"]
-lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
-smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+[hints."univalue/lib/univalue.cpp::push_back"]
+lean_proposition = "univalue_cpp_push_back_impact < 27053"
+smt_constraint = "(assert (< univalue_cpp_push_back_impact 27053))"
 source = "Source context for univalue.cpp::push_back: Extracted from source comment"
+inject_contradiction = true
 
-[hints."univalue.cpp::checkType"]
-lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
-smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+[hints."univalue/lib/univalue.cpp::checkType"]
+lean_proposition = "univalue_cpp_checkType_impact < 19073"
+smt_constraint = "(assert (< univalue_cpp_checkType_impact 19073))"
 source = "Source context for univalue.cpp::checkType: Extracted from source comment"
+inject_contradiction = true
 
-[hints."univalue.cpp::reserve"]
-lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
-smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+[hints."univalue/lib/univalue.cpp::reserve"]
+lean_proposition = "univalue_cpp_reserve_impact < 13600"
+smt_constraint = "(assert (< univalue_cpp_reserve_impact 13600))"
 source = "Source context for univalue.cpp::reserve: Extracted from source comment"
+inject_contradiction = true
+
+[hints."indirectmap.h::find"]
+lean_proposition = "indirectmap_h_find_impact < 16932"
+smt_constraint = "(assert (< indirectmap_h_find_impact 16932))"
+source = "Source context for indirectmap.h::find: Extracted from source comment"
+inject_contradiction = true
+
+[hints."util/bitdeque.h::emplace"]
+lean_proposition = "util_bitdeque_h_emplace_impact < 9641"
+smt_constraint = "(assert (< util_bitdeque_h_emplace_impact 9641))"
+source = "Source context for bitdeque.h::emplace: Extracted from source comment"
+inject_contradiction = true
+
+[hints."secp256k1/src/field_impl.h::secp256k1_fe_mul"]
+lean_proposition = "field_impl_h_secp256k1_fe_mul_impact < 8187"
+smt_constraint = "(assert (< field_impl_h_secp256k1_fe_mul_impact 8187))"
+source = "Source context for field_impl.h::secp256k1_fe_mul: Extracted from source comment"
+inject_contradiction = true
+
+[hints."wallet/test/spend_tests.cpp::Assert"]
+lean_proposition = "spend_tests_cpp_Assert_impact < 7955"
+smt_constraint = "(assert (< spend_tests_cpp_Assert_impact 7955))"
+source = "Source context for spend_tests.cpp::Assert: Extracted from source comment"
+inject_contradiction = true
 
 [hints."univalue.cpp::push_back"]
 lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
