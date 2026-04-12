@@ -41,6 +41,7 @@ source = "Source context for spend_tests.cpp::Assert: Extracted from source comm
 inject_contradiction = true
 
 [hints."univalue.cpp::push_back"]
-lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+lean_proposition = "expected >= 0 and expected <= 5 and typ >= 0 and typ <= 5"
 smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
 source = "Source context for univalue.cpp::push_back: Extracted from source comment"
+inject_contradiction = true
