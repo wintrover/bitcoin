@@ -1,7 +1,7 @@
 {
   "target": "src",
   "sourceRoot": "D:\\Coding\\Archright\\bitcoin\\src",
-  "timestamp": "2026-04-12T06:53:26.293Z",
+  "timestamp": "2026-04-12T06:59:06.984Z",
   "summary": {
     "totalNodes": 9609,
     "attemptedNodes": 5,
@@ -124961,13 +124961,13 @@
     ],
     "performance": {
       "totalWallTimeMs": 19,
-      "cpuEfficiency": 5.263157894736842,
-      "parallelSpeedupRatio": 0.21052631578947367,
+      "cpuEfficiency": 10.526315789473683,
+      "parallelSpeedupRatio": 0.42105263157894735,
       "cacheHitCount": 0,
       "timeoutCount": 0,
       "timeoutImpactNodes": 0,
       "hotspotLabel": "field_impl.h::secp256k1_fe_mul",
-      "hotspotElapsedMs": 1
+      "hotspotElapsedMs": 2
     },
     "timeoutDiagnostics": []
   },
