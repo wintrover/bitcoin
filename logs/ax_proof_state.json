@@ -1,7 +1,7 @@
 {
   "target": "src",
   "sourceRoot": "D:\\Coding\\Archright\\bitcoin\\src",
-  "timestamp": "2026-04-12T06:59:06.984Z",
+  "timestamp": "2026-04-12T13:37:08.760Z",
   "summary": {
     "totalNodes": 9609,
     "attemptedNodes": 5,
@@ -24,7 +24,7 @@
       "dependencyCount": 0,
       "dependentNodeCount": 13,
       "transitiveDependentCount": 1341,
-      "raw_smt_query": "(check-sat)  ; <-- 1st gate: should stop if unsat is returned here\n(assert (>= univalue_cpp_checkType_depth 0))\n(assert (>= univalue_cpp_checkType_impact 19073))\n(check-sat)  ; <-- 2nd gate: final proof",
+      "raw_smt_query": "(check-sat)  ; <-- 1st gate: must halt here if unsat\n(assert (>= univalue_cpp_checkType_depth 0))\n(assert (>= univalue_cpp_checkType_impact 19073))\n(check-sat)  ; <-- 2nd gate: final proof",
       "id": "#01"
     },
     {
@@ -51,7 +51,7 @@
       "dependencyCount": 0,
       "dependentNodeCount": 164,
       "transitiveDependentCount": 702,
-      "raw_smt_query": "(check-sat)  ; <-- 1st gate: should stop if unsat is returned here\n(assert (>= univalue_cpp_reserve_depth 0))\n(assert (>= univalue_cpp_reserve_impact 13600))\n(check-sat)  ; <-- 2nd gate: final proof",
+      "raw_smt_query": "(check-sat)  ; <-- 1st gate: must halt here if unsat\n(assert (>= univalue_cpp_reserve_depth 0))\n(assert (>= univalue_cpp_reserve_impact 13600))\n(check-sat)  ; <-- 2nd gate: final proof",
       "id": "#02"
     },
     {
@@ -78,7 +78,7 @@
       "dependencyCount": 0,
       "dependentNodeCount": 37,
       "transitiveDependentCount": 524,
-      "raw_smt_query": "(check-sat)  ; <-- 1st gate: should stop if unsat is returned here\n(assert (>= field_impl_h_secp256k1_fe_mul_depth 0))\n(assert (>= field_impl_h_secp256k1_fe_mul_impact 8187))\n(check-sat)  ; <-- 2nd gate: final proof",
+      "raw_smt_query": "(check-sat)  ; <-- 1st gate: must halt here if unsat\n(assert (>= field_impl_h_secp256k1_fe_mul_depth 0))\n(assert (>= field_impl_h_secp256k1_fe_mul_impact 8187))\n(check-sat)  ; <-- 2nd gate: final proof",
       "id": "#03"
     },
     {
@@ -105,7 +105,7 @@
       "dependencyCount": 0,
       "dependentNodeCount": 131,
       "transitiveDependentCount": 353,
-      "raw_smt_query": "(check-sat)  ; <-- 1st gate: should stop if unsat is returned here\n(assert (>= spend_tests_cpp_Assert_depth 0))\n(assert (>= spend_tests_cpp_Assert_impact 7955))\n(check-sat)  ; <-- 2nd gate: final proof",
+      "raw_smt_query": "(check-sat)  ; <-- 1st gate: must halt here if unsat\n(assert (>= spend_tests_cpp_Assert_depth 0))\n(assert (>= spend_tests_cpp_Assert_impact 7955))\n(check-sat)  ; <-- 2nd gate: final proof",
       "id": "#04"
     },
     {
@@ -124960,14 +124960,14 @@
       }
     ],
     "performance": {
-      "totalWallTimeMs": 19,
-      "cpuEfficiency": 10.526315789473683,
-      "parallelSpeedupRatio": 0.42105263157894735,
+      "totalWallTimeMs": 16,
+      "cpuEfficiency": 6.25,
+      "parallelSpeedupRatio": 0.25,
       "cacheHitCount": 0,
       "timeoutCount": 0,
       "timeoutImpactNodes": 0,
       "hotspotLabel": "field_impl.h::secp256k1_fe_mul",
-      "hotspotElapsedMs": 2
+      "hotspotElapsedMs": 1
     },
     "timeoutDiagnostics": []
   },
