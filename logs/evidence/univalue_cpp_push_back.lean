@@ -1,10 +1,11 @@
--- Timestamp: 2026-04-14T13:36:06Z
+-- Timestamp: 2026-04-14T13:58:26Z
 -- Constraint: (assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))
 
 import Mathlib.Data.Int.Basic
 import Mathlib.Data.Int.Order.Basic
+import Aesop
 
-theorem univalue_cpp_push_back :
-  forall (expected typ : Int), expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5 := by
-  intros
-  sorry
+theorem univalue_cpp_push_back (expected typ : Int) (h_sys : expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5) :
+  expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5 := by
+  by_contra h
+  aesop
