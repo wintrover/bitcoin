@@ -205,3 +205,5 @@ static inline bool json_isspace(int ch)
 extern const UniValue NullUniValue;
 
 #endif // BITCOIN_UNIVALUE_INCLUDE_UNIVALUE_H
+
+// @axiom-hint: lean="expected <= 5" smt="(assert (<= expected 5))"

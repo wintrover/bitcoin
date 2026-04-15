@@ -217,3 +217,368 @@ source = "Source context for univalue.cpp::checkType: Extracted from source comm
 lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
 smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
 source = "Source context for univalue.cpp::reserve: Extracted from source comment"
+
+[hints."univalue.cpp::push_back"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::push_back: Extracted from source comment"
+
+[hints."univalue.cpp::checkType"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::checkType: Extracted from source comment"
+
+[hints."univalue.cpp::reserve"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::reserve: Extracted from source comment"
+
+[hints."univalue.cpp::pushKV"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::pushKV: Extracted from source comment"
+
+[hints."univalue.cpp::pushKVEnd"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::pushKVEnd: Extracted from source comment"
+
+[hints."univalue.cpp::findKey"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::findKey: Extracted from source comment"
+
+[hints."univalue.cpp::push_back"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::push_back: Extracted from source comment"
+
+[hints."univalue.cpp::checkType"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::checkType: Extracted from source comment"
+
+[hints."univalue.cpp::reserve"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::reserve: Extracted from source comment"
+
+[hints."univalue.cpp::pushKV"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::pushKV: Extracted from source comment"
+
+[hints."univalue.cpp::pushKVEnd"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::pushKVEnd: Extracted from source comment"
+
+[hints."univalue.cpp::findKey"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::findKey: Extracted from source comment"
+
+[hints."univalue.cpp::push_back"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::push_back: Extracted from source comment"
+
+[hints."univalue.cpp::checkType"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::checkType: Extracted from source comment"
+
+[hints."univalue.cpp::reserve"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::reserve: Extracted from source comment"
+
+[hints."univalue.cpp::pushKV"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::pushKV: Extracted from source comment"
+
+[hints."univalue.cpp::pushKVEnd"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::pushKVEnd: Extracted from source comment"
+
+[hints."univalue.cpp::findKey"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::findKey: Extracted from source comment"
+
+[hints."univalue.cpp::find_value"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::find_value: Extracted from source comment"
+
+[hints."univalue.cpp::push_back"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::push_back: Extracted from source comment"
+
+[hints."univalue.cpp::checkType"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::checkType: Extracted from source comment"
+
+[hints."univalue.cpp::reserve"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::reserve: Extracted from source comment"
+
+[hints."univalue.cpp::pushKV"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::pushKV: Extracted from source comment"
+
+[hints."univalue.cpp::pushKVEnd"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::pushKVEnd: Extracted from source comment"
+
+[hints."univalue.cpp::findKey"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::findKey: Extracted from source comment"
+
+[hints."univalue.cpp::find_value"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::find_value: Extracted from source comment"
+
+[hints."univalue.cpp::clear"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::clear: Extracted from source comment"
+
+[hints."univalue.cpp::setNumStr"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setNumStr: Extracted from source comment"
+
+[hints."univalue.cpp::pushKVs"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::pushKVs: Extracted from source comment"
+
+[hints."univalue.cpp::getObjMap"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::getObjMap: Extracted from source comment"
+
+[hints."univalue.cpp::validNumStr"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::validNumStr: Extracted from source comment"
+
+[hints."univalue.cpp::setStr"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setStr: Extracted from source comment"
+
+[hints."univalue.cpp::setNull"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setNull: Extracted from source comment"
+
+[hints."univalue.cpp::setArray"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setArray: Extracted from source comment"
+
+[hints."univalue.cpp::setBool"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setBool: Extracted from source comment"
+
+[hints."univalue.cpp::setObject"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setObject: Extracted from source comment"
+
+[hints."univalue.cpp::checkObject"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::checkObject: Extracted from source comment"
+
+[hints."univalue.cpp::setFloat"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setFloat: Extracted from source comment"
+
+[hints."univalue.cpp::operator"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::operator: Extracted from source comment"
+
+[hints."univalue.cpp::push_backV"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::push_backV: Extracted from source comment"
+
+[hints."univalue.cpp::setInt"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setInt: Extracted from source comment"
+
+[hints."univalue.cpp::setInt"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setInt: Extracted from source comment"
+
+[hints."univalue.cpp::operator"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::operator: Extracted from source comment"
+
+[hints."univalue.cpp::uvTypeName"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::uvTypeName: Extracted from source comment"
+
+[hints."univalue.cpp::uvTypeName"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::uvTypeName: Extracted from source comment"
+
+[hints."univalue.cpp::push_back"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::push_back: Extracted from source comment"
+
+[hints."univalue.cpp::checkType"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::checkType: Extracted from source comment"
+
+[hints."univalue.cpp::reserve"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::reserve: Extracted from source comment"
+
+[hints."univalue.cpp::pushKV"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::pushKV: Extracted from source comment"
+
+[hints."univalue.cpp::pushKVEnd"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::pushKVEnd: Extracted from source comment"
+
+[hints."univalue.cpp::findKey"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::findKey: Extracted from source comment"
+
+[hints."univalue.cpp::find_value"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::find_value: Extracted from source comment"
+
+[hints."univalue.cpp::clear"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::clear: Extracted from source comment"
+
+[hints."univalue.cpp::setNumStr"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setNumStr: Extracted from source comment"
+
+[hints."univalue.cpp::pushKVs"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::pushKVs: Extracted from source comment"
+
+[hints."univalue.cpp::getObjMap"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::getObjMap: Extracted from source comment"
+
+[hints."univalue.cpp::validNumStr"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::validNumStr: Extracted from source comment"
+
+[hints."univalue.cpp::setStr"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setStr: Extracted from source comment"
+
+[hints."univalue.cpp::setNull"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setNull: Extracted from source comment"
+
+[hints."univalue.cpp::setArray"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setArray: Extracted from source comment"
+
+[hints."univalue.cpp::setBool"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setBool: Extracted from source comment"
+
+[hints."univalue.cpp::setObject"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setObject: Extracted from source comment"
+
+[hints."univalue.cpp::checkObject"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::checkObject: Extracted from source comment"
+
+[hints."univalue.cpp::setFloat"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setFloat: Extracted from source comment"
+
+[hints."univalue.cpp::operator"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::operator: Extracted from source comment"
+
+[hints."univalue.cpp::push_backV"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::push_backV: Extracted from source comment"
+
+[hints."univalue.cpp::setInt"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setInt: Extracted from source comment"
+
+[hints."univalue.cpp::setInt"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::setInt: Extracted from source comment"
+
+[hints."univalue.cpp::operator"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::operator: Extracted from source comment"
+
+[hints."univalue.cpp::uvTypeName"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::uvTypeName: Extracted from source comment"
+
+[hints."univalue.cpp::uvTypeName"]
+lean_proposition = "expected ≥ 0 ∧ expected ≤ 5 ∧ typ ≥ 0 ∧ typ ≤ 5"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::uvTypeName: Extracted from source comment"
+
+[hints."parse_univalue.cpp::initialize_parse_univalue"]
+lean_proposition = "expected <= 5"
+smt_constraint = "(assert (<= expected 5))"
+source = "Manual Architect Override"
+
+[hints."univalue.h::json_isspace"]
+lean_proposition = "expected <= 5"
+smt_constraint = "(assert (<= expected 5))"
+source = "Source context for univalue.h::json_isspace: Extracted from source comment"
