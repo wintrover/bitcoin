@@ -1,7 +1,0 @@
-name = "evidence"
-version = "0.1.0"
-defaultTargets = ["evidence"]
-
-[[require]]
-name = "mathlib"
-scope = "leanprover-community"
