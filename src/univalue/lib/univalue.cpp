@@ -208,7 +208,7 @@ const UniValue& UniValue::operator[](size_t index) const
 
 void UniValue::checkType(const VType& expected) const
 {
-    // @axiom-hint: lean="(expected >= 0) /\\ (expected <= 5) /\\ (typ >= 0) /\\ (typ <= 5)" smt="(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+    // @axiom-hint: lean="(expected >= 0) ∧ (expected <= 5) ∧ (typ >= 0) ∧ (typ <= 5)" smt="(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
     if (typ != expected) {
         throw type_error{"JSON value of type " + std::string{uvTypeName(typ)} + " is not of expected type " +
                                  std::string{uvTypeName(expected)}};

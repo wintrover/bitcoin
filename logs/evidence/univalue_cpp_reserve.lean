@@ -1,10 +1,10 @@
--- Timestamp: 2026-04-15T09:38:44Z
+-- Timestamp: 2026-04-15T10:52:22Z
 -- Constraint: (assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))
 
 import Mathlib.Data.Int.Basic
 import Mathlib.Data.Int.Order.Basic
 import Aesop
 
-theorem univalue_cpp_reserve (expected typ : Int) (h_sys : (expected >= 0) /\\ (expected <= 5) /\\ (typ >= 0) /\\ (typ <= 5)) :
-  (expected >= 0) /\\ (expected <= 5) /\\ (typ >= 0) /\\ (typ <= 5) := by
+theorem univalue_cpp_reserve (expected typ : Int) (h_sys : (expected >= 0) ∧ (expected <= 5) ∧ (typ >= 0) ∧ (typ <= 5)) :
+  (expected >= 0) ∧ (expected <= 5) ∧ (typ >= 0) ∧ (typ <= 5) := by
   exact h_sys

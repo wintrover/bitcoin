@@ -148,3 +148,48 @@ source = "Source context for univalue.cpp::checkType: Extracted from source comm
 lean_proposition = "(expected >= 0) /\\ (expected <= 5) /\\ (typ >= 0) /\\ (typ <= 5)"
 smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
 source = "Source context for univalue.cpp::reserve: Extracted from source comment"
+
+[hints."univalue.cpp::push_back"]
+lean_proposition = "(expected >= 0) \\wedge (expected <= 5) \\wedge (typ >= 0) \\wedge (typ <= 5)"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::push_back: Extracted from source comment"
+
+[hints."univalue.cpp::checkType"]
+lean_proposition = "(expected >= 0) \\wedge (expected <= 5) \\wedge (typ >= 0) \\wedge (typ <= 5)"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::checkType: Extracted from source comment"
+
+[hints."univalue.cpp::reserve"]
+lean_proposition = "(expected >= 0) \\wedge (expected <= 5) \\wedge (typ >= 0) \\wedge (typ <= 5)"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::reserve: Extracted from source comment"
+
+[hints."univalue.cpp::push_back"]
+lean_proposition = "(expected >= 0) \\and (expected <= 5) \\and (typ >= 0) \\and (typ <= 5)"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::push_back: Extracted from source comment"
+
+[hints."univalue.cpp::checkType"]
+lean_proposition = "(expected >= 0) \\and (expected <= 5) \\and (typ >= 0) \\and (typ <= 5)"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::checkType: Extracted from source comment"
+
+[hints."univalue.cpp::reserve"]
+lean_proposition = "(expected >= 0) \\and (expected <= 5) \\and (typ >= 0) \\and (typ <= 5)"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::reserve: Extracted from source comment"
+
+[hints."univalue.cpp::push_back"]
+lean_proposition = "(expected >= 0) ∧ (expected <= 5) ∧ (typ >= 0) ∧ (typ <= 5)"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::push_back: Extracted from source comment"
+
+[hints."univalue.cpp::checkType"]
+lean_proposition = "(expected >= 0) ∧ (expected <= 5) ∧ (typ >= 0) ∧ (typ <= 5)"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::checkType: Extracted from source comment"
+
+[hints."univalue.cpp::reserve"]
+lean_proposition = "(expected >= 0) ∧ (expected <= 5) ∧ (typ >= 0) ∧ (typ <= 5)"
+smt_constraint = "(assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))"
+source = "Source context for univalue.cpp::reserve: Extracted from source comment"
