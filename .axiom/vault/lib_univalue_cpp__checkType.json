@@ -1,0 +1,7 @@
+{
+  "modulePath": "lib/univalue.cpp",
+  "functionName": "checkType",
+  "fingerprint": "5871699605817433769",
+  "storedAt": "2026-04-16T07:56:56.095Z",
+  "smtlib2": "; AXIOM SUMMARY: Interval Domain Abstraction\n(declare-fun interval_lower_bound () Int)\n(declare-fun interval_upper_bound () Int)\n(assert (<= interval_lower_bound interval_upper_bound))\n"
+}

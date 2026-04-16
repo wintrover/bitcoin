@@ -1,4 +1,4 @@
--- Timestamp: 2026-04-15T13:57:58Z
+-- Timestamp: 2026-04-16T10:04:53Z
 -- Constraint: (assert (and (>= expected 0) (<= expected 5) (>= typ 0) (<= typ 5)))
 
 import Mathlib.Data.Int.Basic
