@@ -2093,3 +2093,218 @@ lean_proposition = "True"
 smt_constraint = "(assert true)"
 source = "Manual Architect Override"
 
+
+[hints."fs.h::absolute"]
+lean_proposition = "True"
+smt_constraint = "(assert true)"
+source = "Manual Architect Override"
+
+[hints."serialize.h::GetSerializeSize"]
+lean_proposition = "0 <= result /\\ result <= 18446744073709551615"
+smt_constraint = "(and (>= result 0) (<= result 18446744073709551615))"
+source = "Arithmetic bounds of uint64_t"
+
+[hints."endian.h::be32toh_internal"]
+lean_proposition = "0 <= result /\\ result <= 4294967295"
+smt_constraint = "(and (>= result 0) (<= result 4294967295))"
+source = "Arithmetic bounds of uint32_t"
+
+[hints."util.cpp::HelpExampleRpc"]
+lean_proposition = "156 <= result.length"
+smt_constraint = "(>= (str.len result) 156)"
+source = "String length lower bound for curl command"
+
+[hints."netaddress.cpp::IsInternal"]
+lean_proposition = "result = (m_net = 6)"
+smt_constraint = "(= result (= m_net 6))"
+source = "Definition of IsInternal"
+
+[hints."status.h::Status"]
+lean_proposition = "0 <= result /\\ result <= 5"
+smt_constraint = "(and (>= result 0) (<= result 5))"
+source = "Definition of Status code bounds"
+
+[hints."solver.cpp::GetScriptNumber"]
+lean_proposition = "min <= result /\\ result <= max"
+smt_constraint = "(and (>= result min) (<= result max))"
+source = "Range check in GetScriptNumber"
+
+[hints."transaction.h::MakeTransactionRef"]
+lean_proposition = "result = make_shared txIn"
+smt_constraint = "(= result (make_shared txIn))"
+source = "MakeTransactionRef constructs a shared_ptr from txIn"
+
+[hints."args.cpp::GetPathArg"]
+lean_proposition = "result = GetPathArg_ arg default_value"
+smt_constraint = "(= result (GetPathArg_ arg default_value))"
+source = "Delegation to GetPathArg_"
+
+[hints."solver.cpp::IsSmallInteger"]
+lean_proposition = "result = (81 <= opcode /\\ opcode <= 96)"
+smt_constraint = "(= result (and (>= opcode 81) (<= opcode 96)))"
+source = "OP_1 to OP_16 bounds"
+
+[hints."args.cpp::IsArgSet"]
+lean_proposition = "result = (not (isNull (GetSetting strArg)))"
+smt_constraint = "(= result (not (isNull (GetSetting strArg))))"
+source = "IsArgSet checks if setting is not null"
+
+[hints."logging.cpp::LogInstance"]
+lean_proposition = "result = g_logger"
+smt_constraint = "(= result g_logger)"
+source = "LogInstance returns the global logger"
+
+[hints."txgraph.cpp::Updated"]
+lean_proposition = "0 <= level /\\ level <= 1"
+smt_constraint = "(and (>= level 0) (<= level 1))"
+source = "Level bounds for TxGraph"
+
+[hints."status.cc::CopyState"]
+lean_proposition = "result ≠ state"
+smt_constraint = "(not (= result state))"
+source = "CopyState allocates a new buffer"
+
+[hints."addresstype.cpp::ExtractDestination"]
+lean_proposition = "result = ExtractDestination scriptPubKey addressRet"
+smt_constraint = "(= result (ExtractDestination scriptPubKey addressRet))"
+source = "Self-referential definition"
+
+[hints."solver.cpp::MatchMultisig"]
+lean_proposition = "result = MatchMultisig script required_sigs pubkeys"
+smt_constraint = "(= result (MatchMultisig script required_sigs pubkeys))"
+source = "Self-referential deterministic bound"
+
+[hints."solver.cpp::MatchPayToPubkey"]
+lean_proposition = "result = MatchPayToPubkey script pubkey"
+smt_constraint = "(= result (MatchPayToPubkey script pubkey))"
+source = "Self-referential deterministic bound"
+
+[hints."solver.cpp::MatchPayToPubkeyHash"]
+lean_proposition = "result = MatchPayToPubkeyHash script pubkeyhash"
+smt_constraint = "(= result (MatchPayToPubkeyHash script pubkeyhash))"
+source = "Self-referential deterministic bound"
+
+[hints."txgraph.cpp::ClearChunkData"]
+lean_proposition = "this ≠ entry"
+smt_constraint = "(not (= this entry))"
+source = "this and entry are distinct"
+
+[hints."util.h::secp256k1_memczero"]
+lean_proposition = "flag = 0 \\/ flag = 1"
+smt_constraint = "(or (= flag 0) (= flag 1))"
+source = "flag boolean constraint"
+
+[hints."addresstype.cpp::GetScriptForDestination"]
+lean_proposition = "True"
+smt_constraint = "(assert true)"
+source = "Manual Architect Override"
+
+[hints."addresstype.cpp::GetScriptForDestination"]
+lean_proposition = "True"
+smt_constraint = "(assert true)"
+source = "Manual Architect Override"
+
+[hints."solver.cpp::Solver"]
+lean_proposition = "True"
+smt_constraint = "(assert true)"
+source = "Manual Architect Override"
+
+[hints."solver.cpp::Solver"]
+lean_proposition = "True"
+smt_constraint = "(assert true)"
+source = "Manual Architect Override"
+
+[hints."serialize.h::GetSerializeSize"]
+lean_proposition = "0 <= result /\\ result <= 18446744073709551615"
+smt_constraint = "(and (>= result 0) (<= result 18446744073709551615))"
+source = "Arithmetic bounds of uint64_t"
+
+[hints."endian.h::be32toh_internal"]
+lean_proposition = "0 <= result /\\ result <= 4294967295"
+smt_constraint = "(and (>= result 0) (<= result 4294967295))"
+source = "Arithmetic bounds of uint32_t"
+
+[hints."util.cpp::HelpExampleRpc"]
+lean_proposition = "156 <= result.length"
+smt_constraint = "(>= (str.len result) 156)"
+source = "String length lower bound for curl command"
+
+[hints."netaddress.cpp::IsInternal"]
+lean_proposition = "result = (m_net = 6)"
+smt_constraint = "(= result (= m_net 6))"
+source = "Definition of IsInternal"
+
+[hints."status.h::Status"]
+lean_proposition = "0 <= result /\\ result <= 5"
+smt_constraint = "(and (>= result 0) (<= result 5))"
+source = "Definition of Status code bounds"
+
+[hints."solver.cpp::GetScriptNumber"]
+lean_proposition = "min <= result /\\ result <= max"
+smt_constraint = "(and (>= result min) (<= result max))"
+source = "Range check in GetScriptNumber"
+
+[hints."transaction.h::MakeTransactionRef"]
+lean_proposition = "result = make_shared txIn"
+smt_constraint = "(= result (make_shared txIn))"
+source = "MakeTransactionRef constructs a shared_ptr from txIn"
+
+[hints."args.cpp::GetPathArg"]
+lean_proposition = "result = GetPathArg_ arg default_value"
+smt_constraint = "(= result (GetPathArg_ arg default_value))"
+source = "Delegation to GetPathArg_"
+
+[hints."solver.cpp::IsSmallInteger"]
+lean_proposition = "result = (81 <= opcode /\\ opcode <= 96)"
+smt_constraint = "(= result (and (>= opcode 81) (<= opcode 96)))"
+source = "OP_1 to OP_16 bounds"
+
+[hints."args.cpp::IsArgSet"]
+lean_proposition = "result = (not (isNull (GetSetting strArg)))"
+smt_constraint = "(= result (not (isNull (GetSetting strArg))))"
+source = "IsArgSet checks if setting is not null"
+
+[hints."logging.cpp::LogInstance"]
+lean_proposition = "result = g_logger"
+smt_constraint = "(= result g_logger)"
+source = "LogInstance returns the global logger"
+
+[hints."txgraph.cpp::Updated"]
+lean_proposition = "0 <= level /\\ level <= 1"
+smt_constraint = "(and (>= level 0) (<= level 1))"
+source = "Level bounds for TxGraph"
+
+[hints."status.cc::CopyState"]
+lean_proposition = "result ≠ state"
+smt_constraint = "(not (= result state))"
+source = "CopyState allocates a new buffer"
+
+[hints."addresstype.cpp::ExtractDestination"]
+lean_proposition = "result = ExtractDestination scriptPubKey addressRet"
+smt_constraint = "(= result (ExtractDestination scriptPubKey addressRet))"
+source = "Self-referential definition"
+
+[hints."solver.cpp::MatchMultisig"]
+lean_proposition = "result = MatchMultisig script required_sigs pubkeys"
+smt_constraint = "(= result (MatchMultisig script required_sigs pubkeys))"
+source = "Self-referential deterministic bound"
+
+[hints."solver.cpp::MatchPayToPubkey"]
+lean_proposition = "result = MatchPayToPubkey script pubkey"
+smt_constraint = "(= result (MatchPayToPubkey script pubkey))"
+source = "Self-referential deterministic bound"
+
+[hints."solver.cpp::MatchPayToPubkeyHash"]
+lean_proposition = "result = MatchPayToPubkeyHash script pubkeyhash"
+smt_constraint = "(= result (MatchPayToPubkeyHash script pubkeyhash))"
+source = "Self-referential deterministic bound"
+
+[hints."txgraph.cpp::ClearChunkData"]
+lean_proposition = "this ≠ entry"
+smt_constraint = "(not (= this entry))"
+source = "this and entry are distinct"
+
+[hints."util.h::secp256k1_memczero"]
+lean_proposition = "flag = 0 \\/ flag = 1"
+smt_constraint = "(or (= flag 0) (= flag 1))"
+source = "flag boolean constraint"
