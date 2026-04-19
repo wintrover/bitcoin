@@ -2308,3 +2308,13 @@ source = "this and entry are distinct"
 lean_proposition = "flag = 0 \\/ flag = 1"
 smt_constraint = "(or (= flag 0) (= flag 1))"
 source = "flag boolean constraint"
+
+[hints."group_impl.h::secp256k1_ge_set_infinity"]
+lean_proposition = "True"
+smt_constraint = "(assert true)"
+source = "Manual Architect Override"
+
+[hints."group_impl.h::secp256k1_ge_set_infinity"]
+lean_proposition = "True"
+smt_constraint = "(assert true)"
+source = "Manual Architect Override"
