@@ -3,6 +3,7 @@
   "functionName": "secp256k1_gej_double",
   "modulePath": "src/secp256k1/src/group_impl.h",
   "fingerprint": "n3404188486991714898",
+  "structuralFingerprint": "n2987159502027666253",
   "trusted": true,
   "constraints": [
     "Field modulus p = 2^256 - 2^32 - 977",
@@ -27,6 +28,16 @@
   "certified_at": {
     "date": "2026-04-20",
     "timestamp": "2026-04-20T03:54:42.785Z",
+    "system": {
+      "os": "windows",
+      "machine": "WINTROVER",
+      "cwd": "E:\\Axiom_CLI\\bitcoin"
+    }
+  },
+  "currentStructuralFingerprint": "n2987159502027666253",
+  "structural_baselined_at": {
+    "date": "2026-04-20",
+    "timestamp": "2026-04-20T05:47:22.252Z",
     "system": {
       "os": "windows",
       "machine": "WINTROVER",

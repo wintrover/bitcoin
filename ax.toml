@@ -27,12 +27,12 @@ lean_proposition = "∀ (dyn_map dyn_lin dyn_dep size_cluster size_ptr result : 
 smt_constraint = "(declare-const dyn_map Int)\n(declare-const dyn_lin Int)\n(declare-const dyn_dep Int)\n(declare-const size_cluster Int)\n(declare-const size_ptr Int)\n(declare-const result Int)\n(assert (>= dyn_map 0))\n(assert (>= dyn_lin 0))\n(assert (>= dyn_dep 0))\n(assert (>= size_cluster 0))\n(assert (>= size_ptr 0))\n(assert (= result (+ dyn_map dyn_lin dyn_dep size_cluster size_ptr)))\n(assert (>= result (+ size_cluster size_ptr)))"
 source = "Mathlib SizeOf 기반 정밀화: sizeof/플랫폼 상수를 제거하고 구조적 SizeOf(Cluster) 및 포인터 래퍼 비용을 Nat/Int 상수로 추상화"
 
-[hints."field_impl.h::secp256k1_fe_sqr"]
-lean_proposition = "let p : Nat := (2^256) - (2^32) - 977; ∀ (repr : Nat), let a : ZMod p := (repr : ZMod p); (a ^ 2) = a * a"
-smt_constraint = "(declare-const a Int) (declare-const p Int) (assert (= p 115792089237316195423570985008687907853269984665640564039457584007908834671663)) (assert (>= a 0)) (assert (< a p)) (assert (= expected (mod (* a a) p))) (assert (= typ 0))"
-source = "Special model (mistral/labs-leanstral-2603): Data.ZMod.Basic 기반으로 secp256k1 소수체 p 위에서 제곱 연산의 닫힘/정의역 보존을 명시"
-
 [hints."group_impl.h::secp256k1_gej_double"]
 lean_proposition = "let p : Nat := (2^256) - (2^32) - 977; let inv2 : ZMod p := ((p + 1) / 2 : Nat); ∀ (x1 y1 z1 : ZMod p), let z3 := y1 * z1; let s := y1^2; let l := (3 * (x1^2)) * inv2; let t := -(x1 * s); let x3 := l^2 + 2 * t; let y3 := -(l * (x3 + t) + s^2); (y1^2 = x1^3 + 7) → (y3^2 = x3^3 + 7)"
 smt_constraint = "(declare-const p Int) (declare-const inf Int) (declare-const x1 Int) (declare-const y1 Int) (declare-const z1 Int) (declare-const z3 Int) (assert (= p 115792089237316195423570985008687907853269984665640564039457584007908834671663)) (assert (or (= inf 0) (= inf 1))) (assert (>= x1 0)) (assert (< x1 p)) (assert (>= y1 0)) (assert (< y1 p)) (assert (>= z1 0)) (assert (< z1 p)) (assert (= z3 (mod (* y1 z1) p))) (assert (= typ inf)) (assert (= expected (mod (+ (+ x1 y1) (+ z3 7)) p)))"
 source = "Special model (mistral/labs-leanstral-2603): Data.ZMod.Basic 기반으로 projective doubling 단계가 ZMod p 닫힘을 유지하며 커브 방정식 보존을 요구하는 표준 불변량"
+
+[hints."field_impl.h::secp256k1_fe_sqr"]
+lean_proposition = "let p : Nat := (2^256) - (2^32) - 977; ∀ (repr : Nat), let a : ZMod p := (repr : ZMod p); (a ^ 2) = a * a"
+smt_constraint = "(declare-const a Int) (declare-const p Int) (assert (= p 115792089237316195423570985008687907853269984665640564039457584007908834671663)) (assert (>= a 0)) (assert (< a p)) (assert (= expected (mod (* a a) p))) (assert (= typ 0))"
+source = "Special model (mistral/labs-leanstral-2603): Data.ZMod.Basic 기반으로 secp256k1 소수체 p 위에서 제곱 연산의 닫힘/정의역 보존을 명시"
