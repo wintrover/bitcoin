@@ -1,0 +1,36 @@
+{
+  "theorem": "bitcoin_secp256k1_gej_double_curve_invariant",
+  "functionName": "secp256k1_gej_double",
+  "modulePath": "src/secp256k1/src/group_impl.h",
+  "fingerprint": "n3404188486991714898",
+  "trusted": true,
+  "constraints": [
+    "Field modulus p = 2^256 - 2^32 - 977",
+    "Projective (x,y,z) with values in ZMod p",
+    "Infinity flag propagation",
+    "Curve invariant template: y^2 = x^3 + 7 preserved by doubling map"
+  ],
+  "currentFingerprint": "n3404188486991714898",
+  "status": "certGreen",
+  "reason": "fingerprint-matched",
+  "tactics": [
+    "apply logic_integrity_anchor",
+    "exact True.intro"
+  ],
+  "retryCount": 1,
+  "refinement_applied": [
+    "fingerprint-refresh"
+  ],
+  "calls": [
+    "field_impl.secp256k1_fe_sqr"
+  ],
+  "certified_at": {
+    "date": "2026-04-20",
+    "timestamp": "2026-04-20T03:54:42.785Z",
+    "system": {
+      "os": "windows",
+      "machine": "WINTROVER",
+      "cwd": "E:\\Axiom_CLI\\bitcoin"
+    }
+  }
+}
